@@ -16,3 +16,32 @@ after that you can parse it through a exploit tool like metaspolit and yeah
  {nmap -sV scanme.nmap.org}
 To do a version scan, use the ‘-sV’ command. Nmap will provide a list of services with its versions. Do keep in mind that version scans are not always 100% accurate, but it does take you one step closer to successfully getting into a system
 
+
+Os scanning -
+{nmap -sV scanme.nmap.org}
+find the os run time
+Again, OS detection is not always accurate, but it goes a long way towards helping a pen tester get closer to their target
+
+
+Aggressive Scanning- 
+ You can use the -A argument to perform an aggressive scan.enables OS detection, version detection, script scanning, and tracerout
+{nmap -A scanme.nmap.org}
+However, an aggressive scan also sends out more probes, and it is more likely to be detected during security audits
+
+
+Port Scanning-
+> nmap -p 973 192.164.0.1 
+particular port add -p 
+> nmap -p T:7777, 973 192.164.0.1 
+
+
+Output
+> nmap -v scanme.nmap.org 
+
+
+
+
+
+
+
+
