@@ -1,8 +1,18 @@
 Ping scan — Scans the list of devices up and running on a given subnet.
-nmap -sp 192.168.1.1/24 ( example ip ) 
+{nmap -sp 192.168.1.1/24 ( example ip ) }
 
 Stealth scan - 
 Stealth scanning is performed by sending an SYN packet and analyzing the response. If SYN/ACK is received, it means the port is open, and you can open a TCP connection
 However there is no "three way handshake "compleated so it's hard to trace you back 
-nmap -sS scanme.nmap.org ( add sS to make it stealth mode ) 
+{nmap -sS scanme.nmap.org ( add sS to make it stealth mode )} 
 it takes time so wait , and  it's not agressive 
+
+
+Version scanning -
+makes it easy if there are open vulnerabilty that alr exits in a site 
+"https://cve.mitre.org/" 
+makes life easier so do it
+after that you can parse it through a exploit tool like metaspolit and yeah 
+ {nmap -sV scanme.nmap.org}
+To do a version scan, use the ‘-sV’ command. Nmap will provide a list of services with its versions. Do keep in mind that version scans are not always 100% accurate, but it does take you one step closer to successfully getting into a system
+
