@@ -1,1 +1,4 @@
 Ping scan — Scans the list of devices up and running on a given subnet.
+nmap -sp 192.168.1.1/24 ( example ip ) 
+
+Stealth scan - 
