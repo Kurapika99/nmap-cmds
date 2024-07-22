@@ -2,3 +2,7 @@ Ping scan — Scans the list of devices up and running on a given subnet.
 nmap -sp 192.168.1.1/24 ( example ip ) 
 
 Stealth scan - 
+Stealth scanning is performed by sending an SYN packet and analyzing the response. If SYN/ACK is received, it means the port is open, and you can open a TCP connection
+However there is no "three way handshake "compleated so it's hard to trace you back 
+nmap -sS scanme.nmap.org ( add sS to make it stealth mode ) 
+it takes time so wait , and  it's not agressive 
